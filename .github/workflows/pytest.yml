@@ -16,7 +16,7 @@ on:
         type: string
 
 jobs:
-  lint:
+  pytest:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -42,7 +42,8 @@ jobs:
 
       - name: Upload coverage HTML report
         if: github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-html-report
           path: htmlcov/
+

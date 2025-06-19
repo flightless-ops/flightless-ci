@@ -13,7 +13,7 @@ on:
         default: "."
 
 jobs:
-  lint:
+  flake8:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
