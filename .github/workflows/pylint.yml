@@ -35,7 +35,7 @@ jobs:
 
       - name: Download pylintrc from automation repo
         run: |
-          curl -sSL https://raw.githubusercontent.com/flightless-ops/automation/main/.pylintrc -o .pylintrc
+          curl -sSL https://raw.githubusercontent.com/flightless-ops/flightless-ci/main/.pylintrc -o .pylintrc
 
       - name: Run pylint
         run: |
