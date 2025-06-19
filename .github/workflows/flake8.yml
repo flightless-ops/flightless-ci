@@ -35,7 +35,7 @@ jobs:
 
       - name: Download .flake8 from automation repo
         run: |
-          curl -sSL https://raw.githubusercontent.com/flightless-ops/flightless-ci/main/.flake8 -o .flake8
+          curl -sSL https://raw.githubusercontent.com/flightless-ops/flightless-ci/main/configs/.flake8 -o .flake8
 
       - name: Run flake8
         run: |
